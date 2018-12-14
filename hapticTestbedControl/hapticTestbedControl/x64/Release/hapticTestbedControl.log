@@ -1,0 +1,3 @@
+﻿  hapticTestbedControl.cpp
+c:\users\zaz2\documents\github\haptic-testbed-control\haptictestbedcontrol\haptictestbedcontrol\haptictestbedcontrol.cpp(16): error C3861: 'initiateControllers': identifier not found
+c:\users\zaz2\documents\github\haptic-testbed-control\haptictestbedcontrol\haptictestbedcontrol\haptictestbedcontrol.cpp(17): error C2143: syntax error: missing ';' before '}'
