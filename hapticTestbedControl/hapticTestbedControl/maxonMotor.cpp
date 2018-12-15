@@ -28,6 +28,7 @@ maxonMotor::maxonMotor()
 	portName = (char*)"USB0";
 	nodeId = 1;
 	errorCode = 0;
+	keyHandle = 0;
 }
 
 maxonMotor::~maxonMotor()
@@ -37,33 +38,32 @@ maxonMotor::~maxonMotor()
 /***********************************************************
 ******************* PRIVATE FUNCTIONS **********************
 ************************************************************/
-void* maxonMotor::activate(char *portName)
-{
-	// Configuring EPOS4 for motor control
-	char deviceName[] = "EPOS4";
-	char protocolName[] = "MAXON SERIAL V2";
-	char interfaceName[] = "USB";
-	void* keyHandle;
 
-	keyHandle = VCS_OpenDevice(deviceName, protocolName, interfaceName, portName, &errorCode);
-
-	if (keyHandle == 0)
-	{
-		cout << "Open device failure, error code=" << errorCode << endl;
-		exit(0);
-	}
-	else
-	{
-		cout << "Open device success!" << endl;
-	}
-
-	return keyHandle;
-}
 
 /***********************************************************
 ******************* PUBLIC FUNCTIONS ***********************
 ************************************************************/
 void maxonMotor::activate()
 {
-	keyHandle = activate(portName);
+	// Configuring EPOS4 for motor control
+	char deviceName[] = "EPOS4";
+	char protocolName[] = "MAXON SERIAL V2";
+	char interfaceName[] = "USB";
+
+	keyHandle = VCS_OpenDevice(deviceName, protocolName, interfaceName, portName, &errorCode);
+
+	if (keyHandle == 0)
+	{
+		cout << "Open device failure, error code=" << errorCode << endl;
+		exit(EXIT_SUCCESS);
+	}
+	else
+	{
+		cout << "Open device success!" << endl;
+	}
+}
+
+void maxonMotor::setPort(char* port)
+{
+	portName = port;
 }

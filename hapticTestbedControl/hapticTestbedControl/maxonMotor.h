@@ -29,11 +29,11 @@ private:
 	unsigned short nodeId;
 	void* keyHandle;
 
-	void* activate(char *portName);
-
 public:
 	maxonMotor();
 	~maxonMotor();
+
 	void activate();
+	void setPort(char* port);
 };
 #endif MAXONMOTOR

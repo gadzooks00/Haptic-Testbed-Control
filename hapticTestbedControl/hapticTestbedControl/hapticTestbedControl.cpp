@@ -56,14 +56,17 @@ Author(s): Zane Zook (gadzooks@rice.edu)
 ************************************************************/
 int main()
 {
-	//HANDLE keyHandleA = 0;
-	//HANDLE keyHandleB = 0;
-	//DWORD errorCode = 0;
-	//initiateControllers(keyHandleA, keyHandleB, errorCode);
-
-
 	char* portNameA = (char*)"USB1";
+	char* portNameB = (char*)"USB0";
+
 	maxonMotor motorA;
+	maxonMotor motorB;
+
+	motorA.setPort(portNameA);
+	motorB.setPort(portNameB);
+
 	motorA.activate();
-	return 0;
+	motorB.activate();
+
+	return EXIT_SUCCESS;
 }
