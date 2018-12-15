@@ -1,15 +1,16 @@
-/***********************************************************
-hapticTestbedControl.cpp : This file send messages using 
-the MAXON motor controller EPOS library to the EPOS
-controllers and measures forces/torques from the NI DAQ 
-simultaneously. Hardware used with this program include: 
-2 custom MAXON motors, 2 EPOS4 24/1.5 CAN Motor
-controllers, 2 Nano 25 ATI Force/Torque Sensors, and 1 NI
-DAQ for the force sensors.
-
+/*
+File: hapticTestbedControl.cpp
+________________________________
 Author(s): Zane Zook (gadzooks@rice.edu)
-************************************************************/
 
+This file send messages using the MAXON motor controller 
+EPOS library to the EPOS controllers and measures 
+forces/torques from the NI DAQ simultaneously. Hardware 
+used with this program include: 2 custom MAXON motors, 
+2 EPOS4 24/1.5 CAN Motor controllers, 2 Nano 25 ATI
+Force/Torque Sensors, and 1 NI DAQ for the force sensors.
+*/
+ 
 
 /***********************************************************
 ******************** LIBRARY IMPORT ************************
@@ -21,52 +22,46 @@ Author(s): Zane Zook (gadzooks@rice.edu)
 #include "maxonMotor.h"
 
 /***********************************************************
-*********************** FUNCTIONS **************************
+******************** SETUP FUNCTIONS ***********************
 ************************************************************/
-//void initiateControllers(HANDLE &keyHandleA, HANDLE &keyHandleB, DWORD &errorCode)
-//{
-//	char* deviceName = (char*)"EPOS4";
-//	char* protocalStackName = (char*)"MAXON SERIAL V2";
-//	char* interfaceName = (char*)"USB";
-//	char* portNameA = (char*)"USB1";
-//	char* portNameB = (char*)"USB0";
-//	
-//
-//	keyHandleA = VCS_OpenDevice(deviceName, protocalStackName, interfaceName, portNameA, &errorCode);
-//	if (keyHandleA > 0)
-//	{
-//		VCS_CloseDevice(keyHandleA, &errorCode);
-//	}
-//	keyHandleB = VCS_OpenDevice(deviceName, protocalStackName, interfaceName, portNameB, &errorCode);
-//	if (keyHandleB > 0)
-//	{
-//		VCS_CloseDevice(keyHandleB, &errorCode);
-//	}
-//
-//	std::cout << "Hello, Motor Controller ";
-//	std::cout << keyHandleA;
-//	std::cout << " and Motor Controller ";
-//	std::cout << keyHandleB;
-//	std::cout << " have been opened!\n";
-//}
+void motorInitialize(maxonMotor &motor, char* portName)
+{
+	// define relevant parameters for each controller
+	unsigned int desVel = 9500;
+	unsigned int desAcc = 10000;
+	unsigned int desDec = 10000;
+	
+	// set important parameters of each motor
+	motorA.setPort(portNameA);
+	motorB.setPort(portNameB);
+	motorA.setControlParam(desVel, desAcc, desDec);
+	motorB.setControlParam(desVel, desAcc, desDec);
 
+	// activate motor controllers
+	motorA.start();
+	motorB.start();
+}
 
 /***********************************************************
 ********************* MAIN FUNCTION ************************
 ************************************************************/
 int main()
 {
+	// create new motor objects
+	maxonMotor motorA, motorB;
+
+	// define USB port for each controller
 	char* portNameA = (char*)"USB1";
 	char* portNameB = (char*)"USB0";
 
-	maxonMotor motorA;
-	maxonMotor motorB;
+	// initialize motors
+	motorInitialize(motorA, portNameA);
+	motorInitialize(motorB, portNameB);
 
-	motorA.setPort(portNameA);
-	motorB.setPort(portNameB);
-
-	motorA.activate();
-	motorB.activate();
+	// get motor initial position
+	long posA, posB;
+	motorA.getPosition(posA);
+	motorB.getPosition(posB);
 
 	return EXIT_SUCCESS;
 }
