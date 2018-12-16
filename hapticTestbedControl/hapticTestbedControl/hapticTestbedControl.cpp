@@ -26,20 +26,17 @@ Force/Torque Sensors, and 1 NI DAQ for the force sensors.
 ************************************************************/
 void motorInitialize(maxonMotor &motor, char* portName)
 {
-	// define relevant parameters for each controller
+	// define relevant parameters for the controller
 	unsigned int desVel = 9500;
 	unsigned int desAcc = 10000;
 	unsigned int desDec = 10000;
 	
-	// set important parameters of each motor
-	motorA.setPort(portNameA);
-	motorB.setPort(portNameB);
-	motorA.setControlParam(desVel, desAcc, desDec);
-	motorB.setControlParam(desVel, desAcc, desDec);
+	// set important parameters of the motor
+	motor.setPort(portName);
+	motor.setControlParam(desVel, desAcc, desDec);
 
-	// activate motor controllers
-	motorA.start();
-	motorB.start();
+	// activate motor controller
+	motor.start();
 }
 
 /***********************************************************
