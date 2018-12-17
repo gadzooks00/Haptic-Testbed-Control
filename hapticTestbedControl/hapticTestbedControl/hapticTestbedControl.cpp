@@ -22,7 +22,6 @@ Force/Torque Sensors, and 1 NI DAQ for the force sensors.
 #include "maxonMotor.h"
 using namespace std;
 
-
 /***********************************************************
 ******************** SETUP FUNCTIONS ***********************
 ************************************************************/
