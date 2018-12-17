@@ -20,6 +20,7 @@ Force/Torque Sensors, and 1 NI DAQ for the force sensors.
 #include <iostream>
 #include "Definitions.h"
 #include "maxonMotor.h"
+using namespace std;
 
 
 /***********************************************************
@@ -60,6 +61,38 @@ int main()
 	long posA, posB;
 	motorA.getPosition(posA);
 	motorB.getPosition(posB);
+
+	// print out current motor position
+	cout << "Motor A's current position is: ";
+	cout << posA << endl;
+	cout << "Motor B's current position is: ";
+	cout << posB << endl;
+
+	// test motor A
+	cout << endl;
+	cout << "Motor A Movement Test" << endl;
+	cout << "press any key to continue..." << endl;
+	cin.get();
+	motorA.move(40000);
+
+	cout << endl;
+	cout << "Motor A movement to 40000" << endl;
+	cout << "press any key to return..." << endl;
+	cin.get();
+	motorA.move(0);
+
+	// test motor B
+	cout << endl;
+	cout << "Motor B Movement Test" << endl;
+	cout << "press any key to continue..." << endl;
+	cin.get();
+	motorB.move(40000);
+
+	cout << endl;
+	cout << "Motor B movement to 40000" << endl;
+	cout << "press any key to return..." << endl;
+	cin.get();
+	motorB.move(0);
 
 	return EXIT_SUCCESS;
 }

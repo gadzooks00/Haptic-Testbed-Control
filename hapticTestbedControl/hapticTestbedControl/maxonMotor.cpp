@@ -36,9 +36,9 @@ maxonMotor::maxonMotor()
 	errorCode = 0;
 	keyHandle = 0;
 
-	desVelocity = 1000;
-	desAcceleration = 10000;
-	desDeceleration = 10000;
+	desVelocity = 9900;
+	desAcceleration = 10000000;
+	desDeceleration = 10000000;
 }
 
 /*
