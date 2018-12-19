@@ -1,3 +1,5 @@
-﻿  pch.cpp
-  hapticTestbedControl.cpp
+﻿  hapticTestbedControl.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  hapticTestbedControl.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  hapticTestbedControl.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   hapticTestbedControl.vcxproj -> C:\Users\zaz2\Documents\GitHub\Haptic-Testbed-Control\hapticTestbedControl\Debug\hapticTestbedControl.exe

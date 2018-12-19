@@ -1,0 +1,69 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ATICombinedDAQFT, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class ATICombinedDAQFT.FTSystem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    ReadSingleGaugePoint(Double[]): PrivateScope, Public
+    StartSingleSampleAcquisition(String, Double, Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public
+    StartBufferedAcquisition(String, Double, Int32, Int32, Boolean(HasFieldMarshal), Int32): PrivateScope, Public
+    StopAcquisition(): PrivateScope, Public
+    GetErrorInfo(): PrivateScope, Public
+    GetDeviceName(): PrivateScope, Public
+    GetSampleFrequency(): PrivateScope, Public
+    GetAveragingSize(): PrivateScope, Public
+    GetFirstChannel(): PrivateScope, Public
+    LoadCalibrationFile(String, Int32): PrivateScope, Public
+    GetSerialNumber(): PrivateScope, Public
+    GetCalibrationDate(): PrivateScope, Public
+    GetMaxLoad(Int32): PrivateScope, Public
+    SetForceUnits(String): PrivateScope, Public
+    GetForceUnits(): PrivateScope, Public
+    SetTorqueUnits(String): PrivateScope, Public
+    GetTorqueUnits(): PrivateScope, Public
+    GetTempCompAvailable(): PrivateScope, Public
+    GetTempCompEnabled(): PrivateScope, Public
+    ToolTransform(Double[], String, String): PrivateScope, Public
+    GetTransformVector(Double[]): PrivateScope, Public
+    GetTransformDistanceUnits(): PrivateScope, Public
+    GetTransformAngleUnits(): PrivateScope, Public
+    GetBodyStyle(): PrivateScope, Public
+    GetCalibrationType(): PrivateScope, Public
+    GetWorkingMatrix(Double[,]): PrivateScope, Public
+    ReadSingleFTRecord(Double[]): PrivateScope, Public
+    ReadBufferedFTRecords(Int32, Double[]): PrivateScope, Public
+    ReadBufferedGaugeRecords(Int32, Double[]): PrivateScope, Public
+    BiasKnownLoad(Double[]): PrivateScope, Public
+    BiasCurrentLoad(): PrivateScope, Public
+    GetMaxVoltage(): PrivateScope, Public
+    GetMinVoltage(): PrivateScope, Public
+    GetBiasVector(Double[]): PrivateScope, Public
+    GetThermistorValue(): PrivateScope, Public
+    GetBiasSlope(Int32): PrivateScope, Public
+    GetGainSlope(Int32): PrivateScope, Public
+    SetConnectionMode(ConnectionType): PrivateScope, Public
+    GetConnectionMode(): PrivateScope, Public
+    GetHardwareTempComp(): PrivateScope, Public
+    {dtor}(): PrivateScope, Public
+Struct ATICombinedDAQFT.ConnectionType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ATICombinedDAQFT.ConnectionType PSEUDO_DIFFERENTIAL = 12529 : Public, Static, Literal, HasDefault
+    ATICombinedDAQFT.ConnectionType NON_REFERENCED_SINGLE_ENDED = 10078 : Public, Static, Literal, HasDefault
+    ATICombinedDAQFT.ConnectionType REFERENCED_SINGLE_ENDED = 10083 : Public, Static, Literal, HasDefault
+    ATICombinedDAQFT.ConnectionType DIFFERENTIAL = 10106 : Public, Static, Literal, HasDefault

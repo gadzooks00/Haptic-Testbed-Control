@@ -62,5 +62,6 @@ public:
 	// movement functions
 	void move(long desPosition);
 	void getPosition(long& position);
+	BOOL targetReached();
 };
 #endif MAXONMOTOR

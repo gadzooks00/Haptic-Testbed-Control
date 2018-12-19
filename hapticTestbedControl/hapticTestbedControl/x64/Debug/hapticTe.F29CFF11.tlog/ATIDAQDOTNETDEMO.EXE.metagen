@@ -1,0 +1,372 @@
+  ATIDAQDotnetDemo.formCalibrationInfo.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.SmoothProgressBar.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.dialogPresentationOptions.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.formCalibrationOptions.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.formAbout.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.formPresentation.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.formDiagnostics.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.formMain.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.Resources.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.formDataCollection.resources - Embedded, ContainedInManifestFile, 
+  ATIDAQDotnetDemo.formDAQOptions.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ATIDAQDotnetDemo, Version=2.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly ATICombinedDAQFT, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly AxInterop.ATIFTVISUALIZERLib, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Class ATIDAQDotnetDemo.ATIDAQFTDemoOptions: AutoLayout, AnsiClass, Class, Public, Serializable
+  :System.Data.DataSet
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Properties:
+    DemoOptionsDataTable DemoOptions 'get ' : 
+    System.Data.SchemaSerializationMode SchemaSerializationMode 'get set' : 
+    System.Data.DataTableCollection Tables 'get ' : 
+    System.Data.DataRelationCollection Relations 'get ' : 
+  Methods:
+    get_DemoOptions(): PrivateScope, Public, SpecialName
+    get_SchemaSerializationMode(): PrivateScope, Public, Virtual, CheckAccessOnOverride, SpecialName
+    set_SchemaSerializationMode(SchemaSerializationMode): PrivateScope, Public, Virtual, CheckAccessOnOverride, SpecialName
+    get_Tables(): PrivateScope, Public, SpecialName
+    get_Relations(): PrivateScope, Public, SpecialName
+    Clone(): PrivateScope, Public, Virtual, CheckAccessOnOverride
+    GetTypedDataSetSchema(XmlSchemaSet): PrivateScope, Public, Static
+Class ATIDAQDotnetDemo.ATIDAQFTDemoOptions+DemoOptionsRowChangeEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    BeginInvoke(Object, DemoOptionsRowChangeEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, VtableLayoutMask, CheckAccessOnOverride
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, VtableLayoutMask, CheckAccessOnOverride
+    Invoke(Object, DemoOptionsRowChangeEvent): PrivateScope, Public, Virtual, VtableLayoutMask, CheckAccessOnOverride
+Class ATIDAQDotnetDemo.ATIDAQFTDemoOptions+DemoOptionsDataTable: AutoLayout, AnsiClass, Class, NestedPublic, Serializable
+  :System.Data.TypedTableBase`1[ATIDAQDotnetDemo.ATIDAQFTDemoOptions+DemoOptionsRow]
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Properties:
+    System.Data.DataColumn CalibrationFileColumn 'get ' : 
+    System.Data.DataColumn DAQDeviceNameColumn 'get ' : 
+    System.Data.DataColumn DAQSampleRateColumn 'get ' : 
+    System.Data.DataColumn AveragingColumn 'get ' : 
+    System.Data.DataColumn DAQFirstChannelColumn 'get ' : 
+    System.Data.DataColumn UseThermistorColumn 'get ' : 
+    System.Data.DataColumn BufferSizeColumn 'get ' : 
+    System.Data.DataColumn ForceUnitsColumn 'get ' : 
+    System.Data.DataColumn TorqueUnitsColumn 'get ' : 
+    System.Data.DataColumn DiagnosticSampleRateColumn 'get ' : 
+    System.Data.DataColumn DiagnosticSampleSizeColumn 'get ' : 
+    System.Data.DataColumn DiagnosticAveragingColumn 'get ' : 
+    System.Data.DataColumn XDisplacementColumn 'get ' : 
+    System.Data.DataColumn YDisplacementColumn 'get ' : 
+    System.Data.DataColumn ZDisplacementColumn 'get ' : 
+    System.Data.DataColumn XRotationColumn 'get ' : 
+    System.Data.DataColumn YRotationColumn 'get ' : 
+    System.Data.DataColumn ZRotationColumn 'get ' : 
+    System.Data.DataColumn DisplacementUnitsColumn 'get ' : 
+    System.Data.DataColumn RotationUnitsColumn 'get ' : 
+    System.Data.DataColumn FirstTimeRunningColumn 'get ' : 
+    System.Data.DataColumn DiagnosticUseThermistorColumn 'get ' : 
+    System.Data.DataColumn ConnectionModeColumn 'get ' : 
+    System.Data.DataColumn PresentationIconFileColumn 'get ' : 
+    System.Data.DataColumn PresentationTitleColumn 'get ' : 
+    System.Data.DataColumn PresentationHeadingColumn 'get ' : 
+    System.Data.DataColumn PresentationBannerFileColumn 'get ' : 
+    System.Data.DataColumn AutoScaleHistoryColumn 'get ' : 
+    System.Data.DataColumn HistoryViewModeColumn 'get ' : 
+    System.Data.DataColumn HistoryDurationColumn 'get ' : 
+    Int32 Count 'get ' : 
+    DemoOptionsRow Item [Int32] 'get ' : 
+  Events:
+    DemoOptionsRowChangeEventHandler DemoOptionsRowChanging: 
+    DemoOptionsRowChangeEventHandler DemoOptionsRowChanged: 
+    DemoOptionsRowChangeEventHandler DemoOptionsRowDeleting: 
+    DemoOptionsRowChangeEventHandler DemoOptionsRowDeleted: 
+  Methods:
+    get_CalibrationFileColumn(): PrivateScope, Public, SpecialName
+    get_DAQDeviceNameColumn(): PrivateScope, Public, SpecialName
+    get_DAQSampleRateColumn(): PrivateScope, Public, SpecialName
+    get_AveragingColumn(): PrivateScope, Public, SpecialName
+    get_DAQFirstChannelColumn(): PrivateScope, Public, SpecialName
+    get_UseThermistorColumn(): PrivateScope, Public, SpecialName
+    get_BufferSizeColumn(): PrivateScope, Public, SpecialName
+    get_ForceUnitsColumn(): PrivateScope, Public, SpecialName
+    get_TorqueUnitsColumn(): PrivateScope, Public, SpecialName
+    get_DiagnosticSampleRateColumn(): PrivateScope, Public, SpecialName
+    get_DiagnosticSampleSizeColumn(): PrivateScope, Public, SpecialName
+    get_DiagnosticAveragingColumn(): PrivateScope, Public, SpecialName
+    get_XDisplacementColumn(): PrivateScope, Public, SpecialName
+    get_YDisplacementColumn(): PrivateScope, Public, SpecialName
+    get_ZDisplacementColumn(): PrivateScope, Public, SpecialName
+    get_XRotationColumn(): PrivateScope, Public, SpecialName
+    get_YRotationColumn(): PrivateScope, Public, SpecialName
+    get_ZRotationColumn(): PrivateScope, Public, SpecialName
+    get_DisplacementUnitsColumn(): PrivateScope, Public, SpecialName
+    get_RotationUnitsColumn(): PrivateScope, Public, SpecialName
+    get_FirstTimeRunningColumn(): PrivateScope, Public, SpecialName
+    get_DiagnosticUseThermistorColumn(): PrivateScope, Public, SpecialName
+    get_ConnectionModeColumn(): PrivateScope, Public, SpecialName
+    get_PresentationIconFileColumn(): PrivateScope, Public, SpecialName
+    get_PresentationTitleColumn(): PrivateScope, Public, SpecialName
+    get_PresentationHeadingColumn(): PrivateScope, Public, SpecialName
+    get_PresentationBannerFileColumn(): PrivateScope, Public, SpecialName
+    get_AutoScaleHistoryColumn(): PrivateScope, Public, SpecialName
+    get_HistoryViewModeColumn(): PrivateScope, Public, SpecialName
+    get_HistoryDurationColumn(): PrivateScope, Public, SpecialName
+    get_Count(): PrivateScope, Public, SpecialName
+    get_Item(Int32): PrivateScope, Public, SpecialName
+    add_DemoOptionsRowChanging(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    remove_DemoOptionsRowChanging(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    add_DemoOptionsRowChanged(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    remove_DemoOptionsRowChanged(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    add_DemoOptionsRowDeleting(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    remove_DemoOptionsRowDeleting(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    add_DemoOptionsRowDeleted(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    remove_DemoOptionsRowDeleted(DemoOptionsRowChangeEventHandler): PrivateScope, Public, SpecialName
+    AddDemoOptionsRow(DemoOptionsRow): PrivateScope, Public, HideBySig
+    AddDemoOptionsRow(String, String, Double, Int64, Int64, Boolean, Int64, String, String, Double, Int64, Int64, Double, Double, Double, Double, Double, Double, String, String, Boolean, Boolean, String, String, String, String, String, Boolean, Boolean, String): PrivateScope, Public, HideBySig
+    Clone(): PrivateScope, Public, Virtual, CheckAccessOnOverride
+    NewDemoOptionsRow(): PrivateScope, Public
+    RemoveDemoOptionsRow(DemoOptionsRow): PrivateScope, Public
+    GetTypedTableSchema(XmlSchemaSet): PrivateScope, Public, Static
+Class ATIDAQDotnetDemo.ATIDAQFTDemoOptions+DemoOptionsRow: AutoLayout, AnsiClass, Class, NestedPublic
+  :System.Data.DataRow
+  Properties:
+    System.String CalibrationFile 'get set' : 
+    System.String DAQDeviceName 'get set' : 
+    Double DAQSampleRate 'get set' : 
+    Int64 Averaging 'get set' : 
+    Int64 DAQFirstChannel 'get set' : 
+    Boolean UseThermistor 'get set' : 
+    Int64 BufferSize 'get set' : 
+    System.String ForceUnits 'get set' : 
+    System.String TorqueUnits 'get set' : 
+    Double DiagnosticSampleRate 'get set' : 
+    Int64 DiagnosticSampleSize 'get set' : 
+    Int64 DiagnosticAveraging 'get set' : 
+    Double XDisplacement 'get set' : 
+    Double YDisplacement 'get set' : 
+    Double ZDisplacement 'get set' : 
+    Double XRotation 'get set' : 
+    Double YRotation 'get set' : 
+    Double ZRotation 'get set' : 
+    System.String DisplacementUnits 'get set' : 
+    System.String RotationUnits 'get set' : 
+    Boolean FirstTimeRunning 'get set' : 
+    Boolean DiagnosticUseThermistor 'get set' : 
+    System.String ConnectionMode 'get set' : 
+    System.String PresentationIconFile 'get set' : 
+    System.String PresentationTitle 'get set' : 
+    System.String PresentationHeading 'get set' : 
+    System.String PresentationBannerFile 'get set' : 
+    Boolean AutoScaleHistory 'get set' : 
+    Boolean HistoryViewMode 'get set' : 
+    System.String HistoryDuration 'get set' : 
+  Methods:
+    IsXDisplacementNull(): PrivateScope, Public
+    SetXDisplacementNull(): PrivateScope, Public
+    IsYDisplacementNull(): PrivateScope, Public
+    SetYDisplacementNull(): PrivateScope, Public
+    IsZDisplacementNull(): PrivateScope, Public
+    SetZDisplacementNull(): PrivateScope, Public
+    IsXRotationNull(): PrivateScope, Public
+    SetXRotationNull(): PrivateScope, Public
+    IsYRotationNull(): PrivateScope, Public
+    SetYRotationNull(): PrivateScope, Public
+    IsZRotationNull(): PrivateScope, Public
+    SetZRotationNull(): PrivateScope, Public
+    IsDisplacementUnitsNull(): PrivateScope, Public
+    SetDisplacementUnitsNull(): PrivateScope, Public
+    IsRotationUnitsNull(): PrivateScope, Public
+    SetRotationUnitsNull(): PrivateScope, Public
+    IsFirstTimeRunningNull(): PrivateScope, Public
+    SetFirstTimeRunningNull(): PrivateScope, Public
+    IsDiagnosticUseThermistorNull(): PrivateScope, Public
+    SetDiagnosticUseThermistorNull(): PrivateScope, Public
+    IsConnectionModeNull(): PrivateScope, Public
+    SetConnectionModeNull(): PrivateScope, Public
+    IsPresentationIconFileNull(): PrivateScope, Public
+    SetPresentationIconFileNull(): PrivateScope, Public
+    IsPresentationTitleNull(): PrivateScope, Public
+    SetPresentationTitleNull(): PrivateScope, Public
+    IsPresentationHeadingNull(): PrivateScope, Public
+    SetPresentationHeadingNull(): PrivateScope, Public
+    IsPresentationBannerFileNull(): PrivateScope, Public
+    SetPresentationBannerFileNull(): PrivateScope, Public
+    IsAutoScaleHistoryNull(): PrivateScope, Public
+    SetAutoScaleHistoryNull(): PrivateScope, Public
+    IsHistoryViewModeNull(): PrivateScope, Public
+    SetHistoryViewModeNull(): PrivateScope, Public
+    IsHistoryDurationNull(): PrivateScope, Public
+    SetHistoryDurationNull(): PrivateScope, Public
+    get_CalibrationFile(): PrivateScope, Public, SpecialName
+    set_CalibrationFile(String): PrivateScope, Public, SpecialName
+    get_DAQDeviceName(): PrivateScope, Public, SpecialName
+    set_DAQDeviceName(String): PrivateScope, Public, SpecialName
+    get_DAQSampleRate(): PrivateScope, Public, SpecialName
+    set_DAQSampleRate(Double): PrivateScope, Public, SpecialName
+    get_Averaging(): PrivateScope, Public, SpecialName
+    set_Averaging(Int64): PrivateScope, Public, SpecialName
+    get_DAQFirstChannel(): PrivateScope, Public, SpecialName
+    set_DAQFirstChannel(Int64): PrivateScope, Public, SpecialName
+    get_UseThermistor(): PrivateScope, Public, SpecialName
+    set_UseThermistor(Boolean): PrivateScope, Public, SpecialName
+    get_BufferSize(): PrivateScope, Public, SpecialName
+    set_BufferSize(Int64): PrivateScope, Public, SpecialName
+    get_ForceUnits(): PrivateScope, Public, SpecialName
+    set_ForceUnits(String): PrivateScope, Public, SpecialName
+    get_TorqueUnits(): PrivateScope, Public, SpecialName
+    set_TorqueUnits(String): PrivateScope, Public, SpecialName
+    get_DiagnosticSampleRate(): PrivateScope, Public, SpecialName
+    set_DiagnosticSampleRate(Double): PrivateScope, Public, SpecialName
+    get_DiagnosticSampleSize(): PrivateScope, Public, SpecialName
+    set_DiagnosticSampleSize(Int64): PrivateScope, Public, SpecialName
+    get_DiagnosticAveraging(): PrivateScope, Public, SpecialName
+    set_DiagnosticAveraging(Int64): PrivateScope, Public, SpecialName
+    get_XDisplacement(): PrivateScope, Public, SpecialName
+    set_XDisplacement(Double): PrivateScope, Public, SpecialName
+    get_YDisplacement(): PrivateScope, Public, SpecialName
+    set_YDisplacement(Double): PrivateScope, Public, SpecialName
+    get_ZDisplacement(): PrivateScope, Public, SpecialName
+    set_ZDisplacement(Double): PrivateScope, Public, SpecialName
+    get_XRotation(): PrivateScope, Public, SpecialName
+    set_XRotation(Double): PrivateScope, Public, SpecialName
+    get_YRotation(): PrivateScope, Public, SpecialName
+    set_YRotation(Double): PrivateScope, Public, SpecialName
+    get_ZRotation(): PrivateScope, Public, SpecialName
+    set_ZRotation(Double): PrivateScope, Public, SpecialName
+    get_DisplacementUnits(): PrivateScope, Public, SpecialName
+    set_DisplacementUnits(String): PrivateScope, Public, SpecialName
+    get_RotationUnits(): PrivateScope, Public, SpecialName
+    set_RotationUnits(String): PrivateScope, Public, SpecialName
+    get_FirstTimeRunning(): PrivateScope, Public, SpecialName
+    set_FirstTimeRunning(Boolean): PrivateScope, Public, SpecialName
+    get_DiagnosticUseThermistor(): PrivateScope, Public, SpecialName
+    set_DiagnosticUseThermistor(Boolean): PrivateScope, Public, SpecialName
+    get_ConnectionMode(): PrivateScope, Public, SpecialName
+    set_ConnectionMode(String): PrivateScope, Public, SpecialName
+    get_PresentationIconFile(): PrivateScope, Public, SpecialName
+    set_PresentationIconFile(String): PrivateScope, Public, SpecialName
+    get_PresentationTitle(): PrivateScope, Public, SpecialName
+    set_PresentationTitle(String): PrivateScope, Public, SpecialName
+    get_PresentationHeading(): PrivateScope, Public, SpecialName
+    set_PresentationHeading(String): PrivateScope, Public, SpecialName
+    get_PresentationBannerFile(): PrivateScope, Public, SpecialName
+    set_PresentationBannerFile(String): PrivateScope, Public, SpecialName
+    get_AutoScaleHistory(): PrivateScope, Public, SpecialName
+    set_AutoScaleHistory(Boolean): PrivateScope, Public, SpecialName
+    get_HistoryViewMode(): PrivateScope, Public, SpecialName
+    set_HistoryViewMode(Boolean): PrivateScope, Public, SpecialName
+    get_HistoryDuration(): PrivateScope, Public, SpecialName
+    set_HistoryDuration(String): PrivateScope, Public, SpecialName
+    IsCalibrationFileNull(): PrivateScope, Public
+    SetCalibrationFileNull(): PrivateScope, Public
+    IsDAQDeviceNameNull(): PrivateScope, Public
+    SetDAQDeviceNameNull(): PrivateScope, Public
+    IsDAQSampleRateNull(): PrivateScope, Public
+    SetDAQSampleRateNull(): PrivateScope, Public
+    IsAveragingNull(): PrivateScope, Public
+    SetAveragingNull(): PrivateScope, Public
+    IsDAQFirstChannelNull(): PrivateScope, Public
+    SetDAQFirstChannelNull(): PrivateScope, Public
+    IsUseThermistorNull(): PrivateScope, Public
+    SetUseThermistorNull(): PrivateScope, Public
+    IsBufferSizeNull(): PrivateScope, Public
+    SetBufferSizeNull(): PrivateScope, Public
+    IsForceUnitsNull(): PrivateScope, Public
+    SetForceUnitsNull(): PrivateScope, Public
+    IsTorqueUnitsNull(): PrivateScope, Public
+    SetTorqueUnitsNull(): PrivateScope, Public
+    IsDiagnosticSampleRateNull(): PrivateScope, Public
+    SetDiagnosticSampleRateNull(): PrivateScope, Public
+    IsDiagnosticSampleSizeNull(): PrivateScope, Public
+    SetDiagnosticSampleSizeNull(): PrivateScope, Public
+    IsDiagnosticAveragingNull(): PrivateScope, Public
+    SetDiagnosticAveragingNull(): PrivateScope, Public
+Class ATIDAQDotnetDemo.ATIDAQFTDemoOptions+DemoOptionsRowChangeEvent: AutoLayout, AnsiClass, Class, NestedPublic
+  :System.EventArgs
+    Void .ctor(DemoOptionsRow, System.Data.DataRowAction): PrivateScope, Public, SpecialName, RTSpecialName
+  Properties:
+    DemoOptionsRow Row 'get ' : 
+    System.Data.DataRowAction Action 'get ' : 
+  Methods:
+    get_Row(): PrivateScope, Public, SpecialName
+    get_Action(): PrivateScope, Public, SpecialName
+Class ATIDAQDotnetDemo.dialogPresentationOptions: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+Class ATIDAQDotnetDemo.formAbout: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+Class ATIDAQDotnetDemo.formCalibrationInfo: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    SetFTSystem(FTSystem&): PrivateScope, Public
+Class ATIDAQDotnetDemo.formCalibrationOptions: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    SetFTSystem(FTSystem&): PrivateScope, Public
+Class ATIDAQDotnetDemo.formDAQOptions: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+Class ATIDAQDotnetDemo.formDataCollection: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    SetFTSystem(FTSystem&): PrivateScope, Public
+Class ATIDAQDotnetDemo.formDiagnostics: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    SetFTSystem(FTSystem&): PrivateScope, Public
+Class ATIDAQDotnetDemo.formMain: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Color POSITIVE_COLOR : Public
+    System.Drawing.Color NEGATIVE_COLOR : Public
+  Methods:
+    ReadingFormat(Double): PrivateScope, Public
+    Main(): PrivateScope, Public, Static, HideBySig
+Class ATIDAQDotnetDemo.formPresentation: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    SetFTSystem(FTSystem&): PrivateScope, Public
+    presentationUpdateVisualizer(Double[]&): PrivateScope, Public
+    presentationUpdateGuages(Double[]&, Double[]&): PrivateScope, Public
+Class ATIDAQDotnetDemo.SmoothProgressBar: AutoLayout, AnsiClass, Class, Public
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Properties:
+    Int32 Minimum 'get set' : 
+    Int32 Maximum 'get set' : 
+    Int32 Value 'get set' : 
+    System.Drawing.Color ProgressBarColor 'get set' : 
+  Methods:
+    get_Minimum(): PrivateScope, Public, SpecialName
+    set_Minimum(Int32): PrivateScope, Public, SpecialName
+    get_Maximum(): PrivateScope, Public, SpecialName
+    set_Maximum(Int32): PrivateScope, Public, SpecialName
+    get_Value(): PrivateScope, Public, SpecialName
+    set_Value(Int32): PrivateScope, Public, SpecialName
+    get_ProgressBarColor(): PrivateScope, Public, SpecialName
+    set_ProgressBarColor(Color): PrivateScope, Public, SpecialName

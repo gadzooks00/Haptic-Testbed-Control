@@ -1,2 +1,6 @@
-﻿  hapticTestbedControl.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(2110,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "AMD64" and the processor architecture of the reference "ATICombinedDAQFT", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project.
+  hapticTestbedControl.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  hapticTestbedControl.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  hapticTestbedControl.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   hapticTestbedControl.vcxproj -> C:\Users\zaz2\Documents\GitHub\Haptic-Testbed-Control\hapticTestbedControl\x64\Debug\hapticTestbedControl.exe

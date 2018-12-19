@@ -268,3 +268,18 @@ void maxonMotor::halt()
 		cout << "Halt position movement failed!, error code = " << errorCode << endl;
 	}
 }
+
+/*
+Checks to see if the motor is still moving  or if it has
+reached its final destination
+*/
+BOOL maxonMotor::targetReached()
+{
+	BOOL targetReached = FALSE;
+
+	if (!VCS_GetMovementState(keyHandle, nodeId, &targetReached, &errorCode)) 
+	{
+		cout << "Motion check failed!, error code = " << errorCode << endl;
+	}
+	return targetReached;
+}

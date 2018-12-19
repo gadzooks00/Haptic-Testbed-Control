@@ -1,0 +1,326 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.ATIDAQFT.18.1, Version=18.1.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface ATIDAQFT._Calibrations: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    ATIDAQFT.Calibration Item [System.Object] 'get ' : 
+    Double Count 'get ' : 
+  Methods:
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ATIDAQFT.CalibrationsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    ATIDAQFT._Calibrations
+    System.Collections.IEnumerable
+    ATIDAQFT.Calibrations
+  Properties:
+    ATIDAQFT.Calibration Item [System.Object] 'get ' : 
+    Double Count 'get ' : 
+  Methods:
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ATIDAQFT.Calibrations: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ATIDAQFT._Calibrations
+    System.Collections.IEnumerable
+Interface ATIDAQFT._Calibration: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.DateTime CalDate 'get ' : 
+    System.String ForceUnits 'get set' : 
+    System.String TorqueUnits 'get set' : 
+    System.String DistUnits 'get set' : 
+    System.String AngleUnits 'get set' : 
+    System.String PartNumber 'get ' : 
+    Int16 Index 'get ' : 
+    ATIDAQFT.ToolTransforms ToolTransforms 'get ' : 
+    Boolean TempCompAvailable 'get ' : 
+    Boolean TempCompEnabled 'get set' : 
+    Double BiasSlopes [Int16] 'get ' : 
+    Double GainSlopes [Int16] 'get ' : 
+    Double Thermistor 'get ' : 
+    System.String AxisName [System.Object] 'get ' : 
+    Int16 NumAxes 'get ' : 
+    Double AxisMaxLoad [System.Object] 'get ' : 
+    System.String OutputMode 'get ' : 
+    Double OutputRange 'get ' : 
+    Boolean OutputBipolar 'get ' : 
+  Methods:
+    ConvertToFT(Object&(In, Out, HasFieldMarshal), String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMatrix(String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Bias(Object&(In, Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ClearBias(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CalDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ForceUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ForceUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TorqueUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TorqueUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DistUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DistUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AngleUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AngleUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PartNumber(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ToolTransforms(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TempCompAvailable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TempCompEnabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TempCompEnabled(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BiasSlopes(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_GainSlopes(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Thermistor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ResetDefaults(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AxisName(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NumAxes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AxisMaxLoad(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OutputMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OutputRange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OutputBipolar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class ATIDAQFT.CalibrationClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    ATIDAQFT._Calibration
+    ATIDAQFT.Calibration
+  Properties:
+    System.DateTime CalDate 'get ' : 
+    System.String ForceUnits 'get set' : 
+    System.String TorqueUnits 'get set' : 
+    System.String DistUnits 'get set' : 
+    System.String AngleUnits 'get set' : 
+    System.String PartNumber 'get ' : 
+    Int16 Index 'get ' : 
+    ATIDAQFT.ToolTransforms ToolTransforms 'get ' : 
+    Boolean TempCompAvailable 'get ' : 
+    Boolean TempCompEnabled 'get set' : 
+    Double BiasSlopes [Int16] 'get ' : 
+    Double GainSlopes [Int16] 'get ' : 
+    Double Thermistor 'get ' : 
+    System.String AxisName [System.Object] 'get ' : 
+    Int16 NumAxes 'get ' : 
+    Double AxisMaxLoad [System.Object] 'get ' : 
+    System.String OutputMode 'get ' : 
+    Double OutputRange 'get ' : 
+    Boolean OutputBipolar 'get ' : 
+  Methods:
+    ConvertToFT(Object&(In, Out, HasFieldMarshal), String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetMatrix(String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Bias(Object&(In, Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClearBias(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_CalDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ForceUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ForceUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TorqueUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TorqueUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DistUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DistUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AngleUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AngleUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PartNumber(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTransforms(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TempCompAvailable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TempCompEnabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TempCompEnabled(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BiasSlopes(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_GainSlopes(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Thermistor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ResetDefaults(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_AxisName(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NumAxes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AxisMaxLoad(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputRange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OutputBipolar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface ATIDAQFT.Calibration: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ATIDAQFT._Calibration
+Interface ATIDAQFT.Calibration___v0: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.DateTime CalDate 'get ' : 
+    System.String ForceUnits 'get set' : 
+    System.String TorqueUnits 'get set' : 
+    System.String DistUnits 'get set' : 
+    System.String AngleUnits 'get set' : 
+    System.String PartNumber 'get ' : 
+    Int16 Index 'get ' : 
+    ATIDAQFT.ToolTransforms ToolTransforms 'get ' : 
+    Boolean TempCompAvailable 'get ' : 
+    Boolean TempCompEnabled 'get set' : 
+    Double BiasSlopes [Int16] 'get ' : 
+    Double GainSlopes [Int16] 'get ' : 
+    Double Thermistor 'get ' : 
+    System.String AxisName [System.Object] 'get ' : 
+    Int16 NumAxes 'get ' : 
+    Double AxisMaxLoad [System.Object] 'get ' : 
+    System.String OutputMode 'get ' : 
+    Double OutputRange 'get ' : 
+    Boolean OutputBipolar 'get ' : 
+  Methods:
+    ConvertToFT(Object&(In, Out, HasFieldMarshal), String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetMatrix(String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Bias(Object&(In, Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ClearBias(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CalDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ForceUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ForceUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TorqueUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TorqueUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DistUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DistUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AngleUnits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AngleUnits(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PartNumber(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ToolTransforms(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TempCompAvailable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TempCompEnabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TempCompEnabled(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BiasSlopes(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_GainSlopes(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Thermistor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ResetDefaults(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_AxisName(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NumAxes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AxisMaxLoad(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OutputMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OutputRange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OutputBipolar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ATIDAQFT._ToolTransform: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Axis 'get set' : 
+    Double Value 'get set' : 
+    System.String Units 'get set' : 
+  Methods:
+    set_Axis(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Units(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Units(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class ATIDAQFT.ToolTransformClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    ATIDAQFT._ToolTransform
+    ATIDAQFT.ToolTransform
+  Properties:
+    System.String Axis 'get set' : 
+    Double Value 'get set' : 
+    System.String Units 'get set' : 
+  Methods:
+    set_Axis(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(Double(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Units(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Units(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface ATIDAQFT.ToolTransform: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ATIDAQFT._ToolTransform
+Interface ATIDAQFT._ToolTransforms: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    ATIDAQFT.ToolTransform Item [System.Object] 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    SetAsArray(Object&(In, Out, HasFieldMarshal), String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(String(In, HasFieldMarshal), Double(In), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Remove(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ATIDAQFT.ToolTransformsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    ATIDAQFT._ToolTransforms
+    System.Collections.IEnumerable
+    ATIDAQFT.ToolTransforms
+  Properties:
+    ATIDAQFT.ToolTransform Item [System.Object] 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    SetAsArray(Object&(In, Out, HasFieldMarshal), String(In, Optional, HasFieldMarshal), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Add(String(In, HasFieldMarshal), Double(In), String(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Remove(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ATIDAQFT.ToolTransforms: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ATIDAQFT._ToolTransforms
+    System.Collections.IEnumerable
+Interface ATIDAQFT._FTSensor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String CalFilePath 'get set' : 
+    Int16 NumChannels 'get ' : 
+    System.String Serial 'get ' : 
+    System.String BodyStyle 'get ' : 
+    System.String Family 'get ' : 
+    ATIDAQFT.Calibrations Calibrations 'get ' : 
+    System.String Version 'get ' : 
+  Methods:
+    get_CalFilePath(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CalFilePath(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NumChannels(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Serial(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BodyStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Family(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Calibrations(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    LoadScript(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveScript(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ATIDAQFT.FTSensorClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ATIDAQFT._FTSensor
+    ATIDAQFT.FTSensor
+  Properties:
+    System.String CalFilePath 'get set' : 
+    Int16 NumChannels 'get ' : 
+    System.String Serial 'get ' : 
+    System.String BodyStyle 'get ' : 
+    System.String Family 'get ' : 
+    ATIDAQFT.Calibrations Calibrations 'get ' : 
+    System.String Version 'get ' : 
+  Methods:
+    get_CalFilePath(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CalFilePath(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NumChannels(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Serial(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BodyStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Family(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Calibrations(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    LoadScript(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveScript(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ATIDAQFT.FTSensor: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ATIDAQFT._FTSensor
+Struct ATIDAQFT.ErrorConstants: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ATIDAQFT.ErrorConstants errUnknown = -2147220991 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errLoadCalFile = -2147220990 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errParseCalFile = -2147220989 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errNoCalFile = -2147220988 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errBadCalName = -2147220987 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errBadUnits = -2147220986 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errBadTT = -2147220985 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errBadTTIndex = -2147220984 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errNoTTAllowed = -2147220983 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errNoTCAllowed = -2147220982 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errBadAxisName = -2147220981 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errBadVoltages = -2147220980 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errLoadScriptFile = -2147220979 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errParseScriptFile = -2147220978 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errSaveScriptFile = -2147220977 : Public, Static, Literal, HasDefault
+    ATIDAQFT.ErrorConstants errBadChannel = -2147220976 : Public, Static, Literal, HasDefault

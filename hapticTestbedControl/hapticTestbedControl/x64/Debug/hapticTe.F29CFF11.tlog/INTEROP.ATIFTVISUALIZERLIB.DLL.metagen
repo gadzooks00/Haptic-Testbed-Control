@@ -1,0 +1,64 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.ATIFTVISUALIZERLib, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface ATIFTVISUALIZERLib._DATIFTVisualizer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Double MaxForce 'get set' : 
+    Double MaxTorque 'get set' : 
+    Double Azimuth 'get set' : 
+    Double Elevation 'get set' : 
+    Double Inclination 'get set' : 
+  Methods:
+    get_MaxForce(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxForce(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxTorque(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxTorque(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Azimuth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Azimuth(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Elevation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Elevation(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Inclination(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Inclination(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    setForceVector(Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    setTorqueVector(Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface ATIFTVISUALIZERLib._DATIFTVisualizerEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+Class ATIFTVISUALIZERLib.ATIFTVisualizerClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    ATIFTVISUALIZERLib._DATIFTVisualizer
+    ATIFTVISUALIZERLib.ATIFTVisualizer
+    ATIFTVISUALIZERLib._DATIFTVisualizerEvents_Event
+  Properties:
+    Double MaxForce 'get set' : 
+    Double MaxTorque 'get set' : 
+    Double Azimuth 'get set' : 
+    Double Elevation 'get set' : 
+    Double Inclination 'get set' : 
+  Methods:
+    get_MaxForce(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaxForce(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxTorque(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaxTorque(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Azimuth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Azimuth(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Elevation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Elevation(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Inclination(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Inclination(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    setForceVector(Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setTorqueVector(Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface ATIFTVISUALIZERLib._DATIFTVisualizerEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+Interface ATIFTVISUALIZERLib.ATIFTVisualizer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    ATIFTVISUALIZERLib._DATIFTVisualizer
+    ATIFTVISUALIZERLib._DATIFTVisualizerEvents_Event
+Class ATIFTVISUALIZERLib._DATIFTVisualizerEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    ATIFTVISUALIZERLib._DATIFTVisualizerEvents
+  Fields:
+    Int32 m_dwCookie : Public

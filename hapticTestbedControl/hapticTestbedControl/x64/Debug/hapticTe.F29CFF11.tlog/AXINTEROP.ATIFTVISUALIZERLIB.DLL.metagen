@@ -1,0 +1,38 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly AxInterop.ATIFTVISUALIZERLib, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Interop.ATIFTVISUALIZERLib, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class AxATIFTVISUALIZERLib.AxATIFTVisualizer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double MaxForce 'get set' : 
+    Double MaxTorque 'get set' : 
+    Double Azimuth 'get set' : 
+    Double Elevation 'get set' : 
+    Double Inclination 'get set' : 
+  Methods:
+    get_MaxForce(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaxForce(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxTorque(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaxTorque(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Azimuth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Azimuth(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Elevation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Elevation(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Inclination(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Inclination(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    setForceVector(Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setTorqueVector(Double, Double, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxATIFTVISUALIZERLib.AxATIFTVisualizerEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxATIFTVISUALIZERLib.AxATIFTVisualizer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ATIFTVISUALIZERLib._DATIFTVisualizerEvents
